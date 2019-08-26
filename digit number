@@ -1,0 +1,40 @@
+#include <stdio.h>
+	#include<math.h>
+	int main()
+	{
+	long x;
+	long k,l,m,i,j,f=0,p=0,c=0,u=1,d=0,r=0,z=0;
+	
+	scanf("%ld%ld",&x,&k);
+	l=k;
+	m=x;
+	for(i=0;i<k;i++)
+	{
+	c=c+1;	
+	}
+	while(m!=0)
+	{
+	f=m%10;
+	p=p+1;
+	m=m/10;
+	}
+	
+	i=0;
+	z=pow(10,p-1);
+	while(x!=0)
+	{
+	d=x/z;
+	if(u<=c)
+	{
+	d=9;
+	}
+	r=r*10+d;
+	x=x%z;
+	z=z/10;
+	u++;
+	}
+	printf("%ld",r);
+	
+	
+	return 0;
+	}
